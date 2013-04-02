@@ -1,0 +1,131 @@
+body {
+background-color:grey;
+text-align:center;
+}
+
+#website {
+width:1024px;
+margin:0 auto;
+}
+
+#header {
+width:1024px;
+height:150px;
+background-color:lightgreen;
+border-radius:5px;
+-moz-border-radius:5px;
+background-position:center;
+background-image:url(header.png);
+ 
+font-family:Dotum;
+font-size:50px;
+text-align:left;
+}
+
+#header h1{
+font-size:30px;
+color:white;
+font-family:Courier;
+margin-top:10px;
+}
+
+#main {
+width:1024px;
+}
+
+#main_menu {
+float:left;
+width:180px;
+height:600px;
+background-color:lightgreen;
+border-radius:5px;
+-moz-border-radius:5px;
+margin-top:10px;
+margin-bottom:10px;
+text-align:center;
+}
+
+#main_main {
+float:left;
+width:644px;
+height:600px;
+background-color:lightyellow;
+border-radius:5px;
+-moz-border-radius:5px;
+margin-top:10px;
+margin-left:10px;
+margin-bottom:10px;
+}
+
+#main_main_monster {
+float:left;
+width:307px;
+height:250px;
+background-color:lightblue;
+border-radius:5px;
+-moz-border-radius:5px;
+
+margin-top:10px;
+margin-left:10px;
+margin-bottom:10px;
+
+background-position:center;
+background-image:url(monsterexpamle.png);
+}
+
+#main_main_news
+{
+float:left;
+width:307px;
+height:250px;
+background-color:lightblue;
+border-radius:5px;
+-moz-border-radius:5px;
+
+margin-top:10px;
+margin-left:10px;
+margin-bottom:10px;
+}
+
+#main_friends {
+float:right;
+width:180px;
+height:600px;
+background-color:lightgreen;
+border-radius:5px;
+-moz-border-radius:5px;
+margin-top:10px;´
+margin-bottom:10px;
+}
+
+#footer {
+width:1024px;
+height:50px;
+background-color:lightgreen;
+border-radius:5px;
+-moz-border-radius:5px;
+margin-top:10px;
+clear:both;
+}
+
+#link {
+font-family:Courier;
+font-size:30px;
+color:grey;
+}
+
+#main_menu a{
+font-family:Courier;
+font-size:30px;
+color:grey;
+}
+
+#bildBesispiel {
+ width:644px; 
+ height:200px; 
+ float:left; 
+ background-position:center;
+ background-image:url(monsterexpamle.png);
+}
+
+
