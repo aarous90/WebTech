@@ -1,28 +1,33 @@
 <?php
 include 'core/init.php';
-include 'includes/overall/header.php';
 if (empty($_POST) == false) {
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	if (empty($username) == true || empty($password) == true){
-		$errors["message"] = 'Enter your user name and password.';
+		$errors[] = 'Enter your user name and password.';
 	}else if (user_exists($username) == false){
-		$errors["message"] = 'Entered user name or password is incorrect.';	
+		$errors[] = 'Entered user name or password is incorrect.';	
 	}else if (user_active($username) == false){
-		$errors["message"] = 'You have to activate your account.';	
+		$errors[] = 'You need to activate your account.';	
 	}else{
 		$login = login($username, $password);
 		if($login==false){
-			$errors["message"] = 'Entered user name or password is incorrect.';
+			$errors[] = 'Entered user name or password is incorrect.';
 		}else{
 			$_SESSION['user_id'] = $login;
 			header('Location: index.php');
 			exit();
 		}
 	}
-		if(!empty($errors)){
-		print_r($errors);
-		}
+}else{
+	$errors[] = 'No data recieved.';
+}
+include 'includes/overall/header.php';
+if(!empty($errors)){
+	?>
+	<h3>An error has occurred</h3>
+	<?php
+	echo output_errors($errors);
 }
 include 'includes/overall/footer.php'
 ?>
