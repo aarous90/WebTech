@@ -9,9 +9,11 @@
 	    	<input type="password" name="password">
 	    </li>
 	    <li>
+	    	<br>
 	    	<input type="submit" value="Log in">
 	    </li>
 	    <li>
 	    	<a href="register.php">Register</a>
 	    </li>
 	</ul>	
+</form>

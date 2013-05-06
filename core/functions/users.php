@@ -1,7 +1,23 @@
 <?php
+function register_user($register_data) {
+array_walk($register_data, 'array_sanitize');
+$register_data['password'] = md5($register_data['password']);
+$fields = implode(', ', array_keys($register_data));
+$data = '\'' . implode('\', \'', $register_data) . '\'';
+mysql_query("INSERT INTO tlreg($fields) VALUES($data)");
+}
 function user_exists($username) {
 	$username = sanitize($username);
 	$sql = mysql_query("SELECT *FROM tlreg WHERE username = '$username'") or die (mysql_error());
+	if (mysql_num_rows($sql) > 0) {
+		return true;
+	}else{
+		return false;
+	}
+}
+function email_exists($email) {
+	$email = sanitize($email);
+	$sql = mysql_query("SELECT *FROM tlreg WHERE email = '$email'") or die (mysql_error());
 	if (mysql_num_rows($sql) > 0) {
 		return true;
 	}else{
