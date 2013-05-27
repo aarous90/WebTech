@@ -1,10 +1,38 @@
 <?php
+function activate($email,$email_code){
+$email = mysql_real_escape_string($email);
+$email_code = mysql_real_escape_string($email_code);
+$sql = mysql_query("SELECT *FROM tlreg WHERE email = '$email' AND email_code = '$email_code' AND active = 0");
+if (mysql_num_rows($sql) > 0) {
+	mysql_query("UPDATE tlreg SET active = 1 WHERE email = '$email'");
+	return true;
+	}else{
+		return false;
+	}	
+}
+function change_password($user_id, $password){
+$user_id = (int)$user_id;
+$password = md5($password);
+mysql_query("UPDATE tlreg SET password ='$password' WHERE user_id = '$user_id'");
+}
 function register_user($register_data) {
 array_walk($register_data, 'array_sanitize');
 $register_data['password'] = md5($register_data['password']);
 $fields = implode(', ', array_keys($register_data));
 $data = '\'' . implode('\', \'', $register_data) . '\'';
 mysql_query("INSERT INTO tlreg($fields) VALUES($data)");
+$to = $register_data['email'];
+$subject = 'Activate your account.';
+$message = '<html><body>';
+$message .= '<p>Hello, '.$register_data['username'].'</p>';
+$message .=	'<p>Thank you for joining the Trainers League! Activate your account now to play for free.</p>';
+$message .=	'<p>Click the link below to activate your account:</p>';
+$message .=	'<p><a href="http://siftos.0fees.net/activate.php?email='.$register_data['email'].'&email_code='.$register_data['email_code'].'">http://siftos.0fees.net/activate.php?email='.$register_data['email'].'&email_code='.$register_data['email_code'].'</a></p>';
+$message .=	'<p>We will see you in-game!</p>';
+$message .=	'<p>The Trainers League Team</p>';
+$message .=	'<br><br><br><br><hr>';
+$message .= '</body></html>';
+email($to,$subject,$message);
 }
 function user_exists($username) {
 	$username = sanitize($username);

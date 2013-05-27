@@ -1,10 +1,11 @@
 <?php 
 	include 'core/init.php';
+	logged_in_redirect();
 	include 'includes/overall/header.php';
-	if(empty($_POST)==false){
+	if(empty($_POST) == false){
 		$required_fields = array('username','password','password_confirmation','email');
 		foreach ($_POST as $key => $value) {
-			if(empty($value) && in_array($key, $required_fields)==true){
+			if(empty($value) && in_array($key, $required_fields) == true){
 			$errors[] = 'You need to fill out all required fields.';
 			break 1;
 		}
@@ -34,25 +35,30 @@
 		}
 	}
 ?>
-<h3>Register</h3><br>
 <?php
-	if(isset($_GET['test']) && empty($_GET['test'])){
-		echo 'You have been registered successfully!';	
+	if(isset($_GET['success']) && empty($_GET['success'])){
+		?>
+		<h3>You have been registered successfully!</h3>
+		<p>Please check your email and spam folder to activate your account.</p>
+		<?php	
 	}
 	else{
 		if(empty($errors) == true && empty($_POST) == false){
 			$register_data = array(
 			'username'=> $_POST['username'],
 			'password'=> $_POST['password'],
-			'email'=> $_POST['email']
-		);
-	register_user($register_data);
-	header('Location: Register.php?test');
+			'email'=> $_POST['email'],
+			'email_code'=> md5($_POST['username']+date(DATE_RFC822))
+			);
+	register_user($register_data);?>
+	<meta http-equiv="refresh" content="0;url=http://siftos.0fees.net/register.php?success">
+	<?php
 	exit();
-	}else if(!empty($errors)){
+	}else if(empty($errors) == false){
 		echo output_errors($errors);
 	}
 ?>
+<h3>Register</h3><br>
 <form action="" method="post">
 	<ul>
 		<li>

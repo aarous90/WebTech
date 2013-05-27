@@ -1,5 +1,6 @@
 <?php
 	include 'core/init.php';
+	logged_in_redirect();
 	if (empty($_POST) == false) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
@@ -11,7 +12,7 @@
 			$errors[] = 'You need to activate your account.';	
 		}else{
 			$login = login($username, $password);
-			if($login==false){
+			if($login == false){
 				$errors[] = 'Entered user name or password is incorrect.';
 			}else{
 				$_SESSION['user_id'] = $login;
@@ -23,7 +24,7 @@
 		$errors[] = 'No data recieved.';
 	}
 	include 'includes/overall/header.php';
-	if(!empty($errors)){
+	if(empty($errors) == false){
 		?>
 		<h3>An error has occurred</h3>
 		<?php
