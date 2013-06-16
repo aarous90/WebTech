@@ -50,9 +50,8 @@
 			'email'=> $_POST['email'],
 			'email_code'=> md5($_POST['username']+date(DATE_RFC822))
 			);
-	register_user($register_data);?>
-	<meta http-equiv="refresh" content="0;url=http://siftos.0fees.net/register.php?success">
-	<?php
+	register_user($register_data);
+	header('Location: register.php?success');
 	exit();
 	}else if(empty($errors) == false){
 		echo output_errors($errors);

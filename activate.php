@@ -26,9 +26,7 @@ include 'includes/overall/header.php';
 		echo output_errors($errors);
 		}
 		else{
-			?>
-			<meta http-equiv="refresh" content="0;url=http://siftos.0fees.net/activate.php?success">
-			<?php
+			header('Location: activate.php?success');
 			exit();
 		}
 	}

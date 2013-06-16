@@ -1,46 +1,22 @@
 * { padding: 0; margin: 0; }
 body {
  font-family: Arial, Helvetica, sans-serif;
- font-size: 13px;
+ font-size: 12px;
 }
 li{
 	 list-style-type: none;
 }
 a:link {
-	color:#CCCCCC
+	color:#CCCCCC;
 }
 a:visited {
-	color:#FFFFFF
+	color:#FFFFFF;
 }
 a:hover {
-	color:#999999
+	color:#999999;
 }
 a:active {
-	color:#FFFFFF
-}
-ul.navigation
-{
-list-style-type:none;
-margin:0;
-padding:0;
-}
-li.navigation
-{
-display:inline;
-}
-a.navigation:link,a.navigation:visited
-{
-font-weight:bold;
-color:#FFFFFF;
-background-color:#787877;
-text-align:center;
-padding:6px;
-text-decoration:none;
-text-transform:uppercase;
-}
-a.navigation:hover,a.navigation:active
-{
-background-color:#909090;
+	color:#FFFFFF;
 }
 #wrapper { 
  margin: 0 auto;
@@ -68,6 +44,30 @@ background-color:#909090;
  border: 1px solid #000000;
  margin: 0px 0px 5px 0px;
  background: #787877;
+}
+ul.navigation
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+li.navigation
+{
+display:inline;
+}
+a.navigation:link,a.navigation:visited
+{
+font-weight:bold;
+color:#FFFFFF;
+background-color:#787877;
+text-align:center;
+padding:6px;
+text-decoration:none;
+text-transform:uppercase;
+}
+a.navigation:hover,a.navigation:active
+{
+background-color:#909090;
 }
 #leftcolumn { 
  color: #FFFFFF;
@@ -110,3 +110,28 @@ background-color:#909090;
  margin: 0px 0px 10px 0px;
  padding: 10px;
 }
+#chat { 
+
+}
+a.chat{
+ color:#000000;
+}
+#messages { 
+ height: 250px;
+ width: 435px;
+ border: 1px solid #000000;
+ padding: 10px;
+ overflow-y: scroll; 
+ background: #FFFFFF;
+ color: #000000;
+}
+#entry { 
+ margin-top: 5px;
+ height: 50px;
+ width: 435px;
+ border: 1px solid #000000;
+ padding: 10px;
+ color:#000000;
+ resize: none;
+}
+
