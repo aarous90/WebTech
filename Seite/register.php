@@ -31,7 +31,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="button" value="REGISTER" style="width:140px;background-color:000000;color:#F1B348;border-color:000000"></td>	
+					<td><input class="button" type="button" value="REGISTER"></td>	
 				</tr>
 		</table>
 	</div>

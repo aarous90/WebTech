@@ -13,11 +13,11 @@
 					</tr>
 					<tr>
 						<td>Password:</td>
-						<td><input name="pw" type="text" size="20" maxlength="20"></td>
+						<td><input name="password" type="text" size="20" maxlength="20"></td>
 					</tr>
 					<tr>
 						<td><font size="2"><a href="http://www.tagesschau.de/">forgotten Password?</a></font></td>
-						<td><input type="button" value="LOG IN" style="width:140px;background-color:000000;color:#F1B348;border-color:000000"></td>	
+						<td><input class="button" type="submit" value="LOG IN"></td>	
 					</tr>
 				</table>
 			</div>

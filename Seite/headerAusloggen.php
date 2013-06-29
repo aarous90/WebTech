@@ -8,10 +8,10 @@
 				<font size="16">TRAINERS LEAGUE</font>
 				<table align="right">
 					<tr>
-						<td>loggedIn as User</td>						
+						<td>logged in as User</td>						
 					</tr>
 					<tr>
-						<td><input type="button" value="LOG OUT" style="width:140px;background-color:000000;color:#F1B348;border-color:000000"></td>	
+						<td><input class="button" type="button" value="LOG OUT" ></td>	
 					</tr>
 				</table>	
 		

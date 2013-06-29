@@ -3,5 +3,5 @@
 <?php include 'head.php'; ?>
 <body>
 	<div id="actionitem">
-		Home	
+		<input class="actionitem" type="button" value="Home" >	
 	</div>

@@ -146,6 +146,26 @@
 	 padding: 10px;
 	 float: left;
 	}
+	#playnow { 
+	 text-align: right;
+	 clear: both;
+	 color: #000000;
+	 border: 1px solid #000000;
+	 background: #F1B348;
+	 margin: 15px 0px 15px 0px;
+	 padding: 10px;
+	 float: left;
+	}
+	#lobby { 
+	 text-align: right;
+	 clear: both;
+	 color: #000000;
+	 border: 1px solid #000000;
+	 background: #F1B348;
+	 margin: 15px 0px 15px 0px;
+	 padding: 10px;
+	 float: left;
+	}
 	#footer { 
 	 text-align: center;
 	 clear: both;
@@ -166,9 +186,11 @@
 		#homenews{width:438px;height:90px;}
 		#actionitem{width:110px;height:30px;}
 		#kampf {width:356px;height:300px;}
-		#kampflog {width:60px;height:300px;}
+		#kampflog {width:60px;height:300px;font-size: 15px;}
 		#kampfbar {width:438px;height:60px;}
 		#myaccount{width:438px;height:400px;}
+		#playnow{width:438px;height:400px;}
+		#lobby{width:438px;height:400px;}
 		#monster {width:138px;height:110px;}
 		#monsterfeind {width:138px;height:110px;}
 		#status {width:138px;height:110px;}
@@ -187,9 +209,11 @@
 		#homenews{width:898px;height:90px;}
 		#actionitem{width:225px;height:30px;}
 		#kampf {width:776px;height:400px;}
-		#kampflog {width:100px;height:400px;}
+		#kampflog {width:100px;height:400px;font-size: 16px;}
 		#kampfbar {width:898px;height:60px;}
 		#myaccount{width:898px;height:400px;}
+		#playnow{width:898px;height:400px;}
+		#lobby{width:898px;height:400px;}
 		#monster {width:300px;height:150px;}
 		#monsterfeind {width:300px;height:150px;}
 		#status {width:300px;height:150px;}
@@ -208,9 +232,11 @@
 		#homenews{width:1198px;height:90px;}
 		#actionitem{width:300px;height:30px;}
 		#kampf {width:946px;height:500px;}
-		#kampflog {width:230px;height:500px;}
+		#kampflog {width:230px;height:500px;font-size: 17px;}
 		#kampfbar {width:1198px;height:60px;}
 		#myaccount{width:1198px;height:400px;}
+		#playnow{width:1198px;height:400px;}
+		#lobby{width:1198px;height:400px;}
 		#monster {width:370px;height:190px;}
 		#monsterfeind {width:370px;height:190px;}
 		#status {width:370px;height:190px;}

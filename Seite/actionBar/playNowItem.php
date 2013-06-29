@@ -3,5 +3,5 @@
 <?php include 'head.php'; ?>
 <body>
 	<div id="actionitem">
-		Play Now	
+		<input class="actionitem" type="button" value="Play Now" >
 	</div>
