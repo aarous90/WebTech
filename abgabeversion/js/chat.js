@@ -1,5 +1,5 @@
 var chat = {}
-
+var chatDiv = document.getElementById ("messages");
 chat.fetchMessages = function () {
 	$.ajax({ 
 		url: 'ajax/chat.php', 
@@ -7,6 +7,7 @@ chat.fetchMessages = function () {
 		data: { method: 'fetch'},
 		success: function(data){ 
 			$('#messages').html(data);
+			chatDiv.scrollTop = chatDiv.scrollHeight;
 		}
 	});
 }
@@ -31,4 +32,5 @@ chat.entry.bind('keydown', function(e){
 		e.preventDefault();
 	}
 });
-chat.interval = setInterval(chat.fetchMessages, 20000);
+chat.interval = setInterval(chat.fetchMessages, 8000);
+chat.fetchMessages

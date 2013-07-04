@@ -25,7 +25,7 @@ require '../core/init.php';
 		} else if ($method == 'throw' && isset($_POST['method']) == true){
 				$message = trim($_POST['message']);
 				if (empty($message) == false){
-					$chat->throwMessage($_SESSION['user_id'], $message);
+					$chat->throwMessage($session_user_id, $message);
 				}
 		}
 	}

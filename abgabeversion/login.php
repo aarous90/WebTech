@@ -16,7 +16,7 @@
 				$errors[] = 'Entered user name or password is incorrect.';
 			}else{
 				$_SESSION['user_id'] = $login;
-				header('Location: index.php');
+				header('Location: home.php');
 				exit();
 			}
 		}

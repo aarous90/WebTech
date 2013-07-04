@@ -1,0 +1,154 @@
+* { padding: 0; margin: 0; }
+
+/***********OVERALL************/
+body {
+ background-color:#000000;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+li{
+	 list-style-type: none;
+}
+a:link {
+	color:#FFFFFF
+}
+a:visited {
+	color:#787575
+}
+a:hover {
+	color:#787575
+}
+a:active {
+	color:#FFFFFF
+}
+
+/***********IDS************/
+#header {
+ color: #000000;
+ float: left;
+ padding: 10px;
+ border-left:1px solid #000000;
+ border-right:1px solid #000000;
+ margin: 10px 0px 0px 0px;
+ background: #F1B348;
+}
+#navigation {
+color: #000000;
+float: left;
+border-left:1px solid #000000;
+border-right:1px solid #000000;
+margin: 0px 0px 15px 0px;
+background: #F1B348;
+}
+#navigationitem {
+ width:140px; 
+ background-color:#000000; 
+ color:#F1B348; 
+ border-color:#000000;
+ text-align:center;
+}
+#content { 
+ color: #000000;
+ border: 1px solid #000000;
+ background: #F1B348;
+ margin: 75px 0px 70px 0px;
+ padding: 10px;
+ float: left;
+ text-align: center;
+}
+#leftcolumn { 
+ color: #000000;
+ border: 1px solid #000000;
+ background: #F1B348;
+ margin: 75px 0px 70px 0px;
+ padding: 10px;
+ float: left;
+ text-align: center;
+}
+#rightcolumn { 
+ color: #000000;
+ border: 1px solid #000000;
+ background: #F1B348;
+ margin: 75px 0px 70px 0px;
+ padding: 10px;
+ float: left;
+ text-align: center;
+}
+#footer { 
+ text-align: center;
+ clear: both;
+ color: #000000;
+ border: 1px solid #000000;
+ background: #F1B348;
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+}
+#button {
+ width:140px; 
+ background-color:#000000; 
+ color:#F1B348; 
+ border-color:#000000;
+ text-align:center;
+}
+
+/***********CHAT************/
+a.chat{
+ color:#000000;
+}
+#messages { 
+ height: 250px;
+ width: 435px;
+ border: 1px solid #000000;
+ padding: 10px;
+ overflow-y: scroll;
+ overflow-x: hidden; 
+ background: #FFFFFF;
+ color: #000000;
+}
+#entry { 
+ margin-top: 5px;
+ height: 50px;
+ width: 435px;
+ border: 1px solid #000000;
+ padding: 10px;
+ color:#000000;
+ resize: none;
+}
+
+/***********RESPONSIVE************/
+@media screen and (max-width: 480px) {
+	#header {clear:both; width:438px;height:160px;}
+	#navigation{width:458px;height:35px;}
+	#navigationitem{width:110px;height:30px;}
+	#leftcolumn {float:left; width:438px;height:120px;margin: 30px 0px 20px 0px;}
+	#content {float:left; width:438px;height:270px;margin: 15px 0px 20px 0px;}
+	#rightcolumn {float:left; width:438px;height:120px;margin: 15px 0px 40px 0px;}
+	#footer {float:left; width:438px;height:20px;}
+	#fillervertikal {width:80px;height:110px;}
+	#fillerhorizontal {width:138px;height:80px;}
+	
+}
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+	#header {clear:both; width:898px;height:80px;}
+	#navigation{width:918px;height:35px;}
+	#navigationitem{width:225px;height:30px;}
+	#leftcolumn {float:left; width:150px;height:270px;}
+	#content {float:left; width:556px;height:270px;}
+	#rightcolumn {float:left; width:150px;height:270px;}
+	#footer {float:left; width:898px;height:20px;}
+	#fillervertikal {width:176px;height:150px;}
+	#fillerhorizontal {width:300px;height:100px;}
+	
+}
+@media screen and (min-width: 1024px) {
+	#header {clear:both; width:1198px;height:80px;}
+	#navigation{width:1218px;height:35px;}
+	#navigationitem{width:300px;height:30px;}
+	#leftcolumn {float:left; width:200px;height:270px;}
+	#content {float:left; width:756px;height:270px;}
+	#rightcolumn {float:left; width:200px;height:270px;}
+	#footer {float:left; width:1198px;height:20px;}
+	#fillervertikal {width:206px;height:190px;}
+	#fillerhorizontal {width:370px;height:120px;}
+}
+	
