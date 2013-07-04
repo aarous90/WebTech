@@ -130,6 +130,14 @@ background-color:#008000;
 #animation{
 background-color:#000080;
 }
+#battleButton{
+ width:100px; 
+ background-color:#000000; 
+ color:#F1B348; 
+ border-color:#000000;
+ text-align:center;
+ margin: 0px 50px 30px 0px;
+}
 
 /***********RESPONSIVE************/
 @media screen and (max-width: 480px) {
@@ -166,14 +174,14 @@ background-color:#000080;
 	#header {clear:both; width:1198px;height:80px;}
 	#navigation{width:1218px;height:35px;}
 	#navigationitem{width:300px;height:30px;}
-	#leftcolumn {float:left; width:200px;height:270px;}
-	#content {float:left; width:756px;height:270px;}
-	#rightcolumn {float:left; width:200px;height:270px;}
+	#leftcolumn {float:left; width:200px;height:300px;}
+	#content {float:left; width:756px;height:300px;}
+	#rightcolumn {float:left; width:200px;height:300px;}
 	#footer {float:left; width:1198px;height:20px;}
-	#enemy{width:240px; height:135px;}
-	#statusEnemy{width:240px; height:135px;}
-	#monster{width:240px; height:135px;}
-	#status{width:240px; height:135px;}
-	#animation{width:270px; height:270px;}
+	#enemy{width:240px; height:150px;}
+	#statusEnemy{width:240px; height:150px;}
+	#monster{width:240px; height:150px;}
+	#status{width:240px; height:150px;}
+	#animation{width:270px; height:300px;}
 }
 	
