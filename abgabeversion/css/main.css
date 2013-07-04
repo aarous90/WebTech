@@ -29,7 +29,7 @@ a:active {
  padding: 10px;
  border-left:1px solid #000000;
  border-right:1px solid #000000;
- margin: 10px 400px 0px 0px;
+ margin: 10px 800px 0px 0px;
  background: #F1B348;
 }
 #navigation {
@@ -51,7 +51,7 @@ background: #F1B348;
  color: #000000;
  border: 1px solid #000000;
  background: #F1B348;
- margin: 75px 0px 70px 0px;
+ margin: 50px 0px 50px 0px;
  padding: 10px;
  float: left;
  text-align: center;
@@ -60,7 +60,7 @@ background: #F1B348;
  color: #000000;
  border: 1px solid #000000;
  background: #F1B348;
- margin: 75px 0px 70px 0px;
+ margin: 50px 0px 50px 0px;
  padding: 10px;
  float: left;
  text-align: center;
@@ -69,7 +69,7 @@ background: #F1B348;
  color: #000000;
  border: 1px solid #000000;
  background: #F1B348;
- margin: 75px 0px 70px 0px;
+ margin: 50px 0px 50px 0px;
  padding: 10px;
  float: left;
  text-align: center;
@@ -114,6 +114,22 @@ a.chat{
  color:#000000;
  resize: none;
 }
+/***********BATTLE************/
+#enemy{
+background-color:#000800;
+}
+#statusEnemy{
+background-color:#008000;
+}
+#monster{
+background-color:#000800;
+}
+#status{
+background-color:#008000;
+}
+#animation{
+background-color:#000080;
+}
 
 /***********RESPONSIVE************/
 @media screen and (max-width: 480px) {
@@ -124,8 +140,11 @@ a.chat{
 	#content {float:left; width:438px;height:220px;margin: 15px 0px 20px 0px;}
 	#rightcolumn {float:left; width:438px;height:90px;margin: 15px 0px 40px 0px;}
 	#footer {float:left; width:438px;height:20px;}
-	#fillervertikal {width:80px;height:110px;}
-	#fillerhorizontal {width:138px;height:80px;}
+	#enemy{width:130px; height:105px;}
+	#statusEnemy{width:130px; height:105px;}
+	#monster{width:130px; height:105px;}
+	#status{width:130px; height:105px;}
+	#animation{width:170px; height:210px;}
 	
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
@@ -136,8 +155,11 @@ a.chat{
 	#content {float:left; width:556px;height:270px;}
 	#rightcolumn {float:left; width:150px;height:270px;}
 	#footer {float:left; width:898px;height:20px;}
-	#fillervertikal {width:176px;height:150px;}
-	#fillerhorizontal {width:300px;height:100px;}
+	#enemy{width:160px; height:135px;}
+	#statusEnemy{width:160px; height:135px;}
+	#monster{width:160px; height:135px;}
+	#status{width:160px; height:135px;}
+	#animation{width:225px; height:270px;}
 	
 }
 @media screen and (min-width: 1024px){
@@ -148,7 +170,10 @@ a.chat{
 	#content {float:left; width:756px;height:270px;}
 	#rightcolumn {float:left; width:200px;height:270px;}
 	#footer {float:left; width:1198px;height:20px;}
-	#fillervertikal {width:206px;height:190px;}
-	#fillerhorizontal {width:370px;height:120px;}
+	#enemy{width:240px; height:135px;}
+	#statusEnemy{width:240px; height:135px;}
+	#monster{width:240px; height:135px;}
+	#status{width:240px; height:135px;}
+	#animation{width:270px; height:270px;}
 }
 	
