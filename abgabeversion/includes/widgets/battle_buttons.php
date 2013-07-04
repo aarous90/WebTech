@@ -1,6 +1,9 @@
 <div style="margin-top:auto; margin-bottom:auto; text-align:center;">
-	<input id="battleButton" type="button" value="Attack 1" onclick="">
-	<input id="battleButton" type="button" value="Attack 2" onclick="">
-	<input id="battleButton" type="button" value="Attack 3" onclick="">
-	<input id="battleButton" type="button" value="Attack 4" onclick="">
+	<input id="attBtn" type="button" value="Attack" onclick="attackBtn()()">
+	<input id="defAttBtn" type="button" value="DefaceAtt" onclick="defAttBtn()">
+	<input id="defDefBtn" type="button" value="DefaceDef" onclick="defDefBtn()">
+	<input id="enhAttBtn" type="button" value="EnhanceAtt" onclick="enhAttBtn()">
+	<input id="enhDefBtn" type="button" value="EnhanceDef" onclick="enhDefBtn()">
 </div>
+
+  

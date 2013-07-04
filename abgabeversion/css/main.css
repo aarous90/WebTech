@@ -130,15 +130,55 @@ background-color:#008000;
 #animation{
 background-color:#000080;
 }
-#battleButton{
+#attBtn{
  width:100px; 
  background-color:#000000; 
  color:#F1B348; 
  border-color:#000000;
  text-align:center;
- margin: 0px 50px 30px 0px;
+ margin: 0px 40px 20px 0px;
 }
-
+#defAttBtn{
+ width:100px; 
+ background-color:#000000; 
+ color:#F1B348; 
+ border-color:#000000;
+ text-align:center;
+ margin: 0px 40px 20px 0px;
+}
+#defDefBtn{
+ width:100px; 
+ background-color:#000000; 
+ color:#F1B348; 
+ border-color:#000000;
+ text-align:center;
+ margin: 0px 40px 20px 0px;
+}
+#enhAttBtn{
+ width:100px; 
+ background-color:#000000; 
+ color:#F1B348; 
+ border-color:#000000;
+ text-align:center;
+ margin: 0px 40px 20px 0px;
+}
+#enhDefBtn{
+ width:100px; 
+ background-color:#000000; 
+ color:#F1B348; 
+ border-color:#000000;
+ text-align:center;
+ margin: 0px 40px 20px 0px;
+}
+#battleLog { 
+ border: 1px solid #000000;
+ padding: 10px;
+ overflow-y: scroll;
+ overflow-x: hidden; 
+ background: #FFFFFF;
+ color: #000000;
+ }
+ 
 /***********RESPONSIVE************/
 @media screen and (max-width: 480px) {
 	#header {clear:both; width:438px;height:180px;}
@@ -153,6 +193,7 @@ background-color:#000080;
 	#monster{width:130px; height:105px;}
 	#status{width:130px; height:105px;}
 	#animation{width:170px; height:210px;}
+	#battleLog {width: 390px; height: 55px;}
 	
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
@@ -168,6 +209,7 @@ background-color:#000080;
 	#monster{width:160px; height:135px;}
 	#status{width:160px; height:135px;}
 	#animation{width:225px; height:270px;}
+	#battleLog {height: 235px; width: 130px;}
 	
 }
 @media screen and (min-width: 1024px){
@@ -183,5 +225,6 @@ background-color:#000080;
 	#monster{width:240px; height:150px;}
 	#status{width:240px; height:150px;}
 	#animation{width:270px; height:300px;}
+	#battleLog {height: 265px; width: 175px;}
 }
 	
