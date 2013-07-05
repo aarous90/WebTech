@@ -32,5 +32,4 @@ chat.entry.bind('keydown', function(e){
 		e.preventDefault();
 	}
 });
-chat.interval = setInterval(chat.fetchMessages, 8000);
-chat.fetchMessages
+chat.interval = setInterval(chat.fetchMessages, 5000);

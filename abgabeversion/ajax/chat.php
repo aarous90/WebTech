@@ -2,12 +2,11 @@
 require '../core/init.php';
 	if(isset($_POST['method']) == true && empty($_POST['method']) == false){
 
-	$chat = new Chat();
 	$method = trim($_POST['method']);
 
 		if ($method == 'fetch'){
 
-			$messages = $chat->fetchMessages();
+			$messages = fetchMessages();
 
 			if(empty($messages) == true){
 				echo 'no messages';
@@ -25,7 +24,7 @@ require '../core/init.php';
 		} else if ($method == 'throw' && isset($_POST['method']) == true){
 				$message = trim($_POST['message']);
 				if (empty($message) == false){
-					$chat->throwMessage($session_user_id, $message);
+					throwMessage($session_user_id, $message);
 				}
 		}
 	}

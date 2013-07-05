@@ -92,8 +92,11 @@ background: #F1B348;
 }
 
 /***********CHAT************/
-a.chat{
+#chat a:link, a:hover, a:active, a:visited{
  color:#000000;
+ font-weight: bold;
+}
+#chat{
 }
 #messages { 
  height: 250px;
@@ -104,6 +107,7 @@ a.chat{
  overflow-x: hidden; 
  background: #FFFFFF;
  color: #000000;
+ text-align: left;
 }
 #entry { 
  margin-top: 5px;

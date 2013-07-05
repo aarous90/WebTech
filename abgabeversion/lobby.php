@@ -1,7 +1,6 @@
 <?php include 'core/init.php'; 
 	  protect_page();
 	  include 'includes/overall/header.php';
-	  $chat = new Chat();
 ?>
 <div id="chat">
 	<div id="messages"></div>
