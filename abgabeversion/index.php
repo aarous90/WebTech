@@ -51,7 +51,7 @@
 			'email_code'=> md5($_POST['username']+date(DATE_RFC822))
 			);
 	register_user($register_data);
-	header('Location: register.php?success');
+	header('Location: index.php?success');
 	exit();
 	}else if(empty($errors) == false){
 		echo output_errors($errors);
@@ -85,7 +85,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="button" value="REGISTER" id="button"></td>	
+				<td><input type="submit" value="Register" id="button"></td>	
 			</tr>
 		</table>
 	</form>
